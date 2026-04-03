@@ -71,3 +71,16 @@ body{
     text-align: center;
     width: 600px;
 }
+
+#polling-container{
+    text-align: center;
+    border: 1px solid black;
+    margin-top: 60px;
+    padding-bottom: 15px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+#polling-container button{
+    margin-top: 30px;
+}
