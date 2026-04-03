@@ -81,6 +81,12 @@ body{
     margin-right: 150px;
 }
 
+#polling-container .book-option{
+    margin-top: 20px;
+    margin-left: 20px;
+    text-align: left;
+}
+
 #polling-container button{
     margin-top: 30px;
 }
