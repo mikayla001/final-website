@@ -1,0 +1,73 @@
+.content{
+    display: flex;
+    justify-content: space-around;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 25px;
+
+    margin: 20px 20px;
+}
+
+#authors-page .content{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#authors-page .description{
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    gap: 25px;
+
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 5px;
+
+    margin: 20px 0;
+}
+
+#authors-page .description p {
+    width: 230px;
+}
+
+#authors-page .description img{
+    height: 250px;
+    width: auto;
+}
+
+
+h1 {
+    padding-top: 25px;
+}
+
+img {
+    width: 35%;
+    height: auto; 
+}
+
+body{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.home{
+    padding-left: 200px;
+    padding-right: 200px;
+    text-align: center;
+}
+
+.home p{
+    font-size: 18px;
+}
+
+#results {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 600px;
+}

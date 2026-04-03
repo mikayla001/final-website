@@ -1,0 +1,56 @@
+/* Reset default list styling for ALL navbars */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* Make list items horizontal */
+nav ul li {
+    float: left;
+}
+
+/* Style all nav links */
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Horizontal (Top) Navbar   */
+
+nav.horizontal ul {
+    background-color: #7796CB;
+}
+
+nav.horizontal ul li a:hover {
+    background-color: #516fa3;
+}
+
+
+/* Genres Navbar             */
+
+nav.genres ul {
+    background-color: #F4A698;
+}
+
+nav.genres ul li a:hover {
+    background-color: #E04F4F;
+}
+
+body{
+    background-color:rgb(251, 240, 223) ;
+}
+
+h1 {
+    font-family: "Merriweather";
+    font-size: 3em;
+}
+
+p {
+    font-family: "Corben";
+    font-size: small;
+}
