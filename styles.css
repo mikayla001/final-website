@@ -54,3 +54,17 @@ p {
     font-family: "Corben";
     font-size: small;
 }
+
+#polling-container{
+    background-color: #F5F1E8;
+}
+
+#polling-container .book-option{
+    cursor: pointer;
+}
+
+#polling-container button{
+    background-color: brown;
+    color: white;
+    cursor: pointer;
+}
