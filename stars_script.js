@@ -1,4 +1,3 @@
-
 // Function to generate star graphics from a rating value (0 to 5, supports .5 increments)
 function renderStars(ratingValue, container) {
     if (!container) return;
@@ -11,7 +10,7 @@ function renderStars(ratingValue, container) {
     
     // Calculate full stars, half star, empty stars
     const fullStars = Math.floor(rating);
-    const hasHalfStar = (rating - fullStars) >= 0.25; // treat anything .25+ as half star
+    const hasHalfStar = (rating - fullStars) >= 0.25;
     
     // Add full stars
     for (let i = 0; i < fullStars; i++) {
@@ -27,7 +26,7 @@ function renderStars(ratingValue, container) {
         container.appendChild(halfStarSpan);
     }
     
-    // Calculate empty stars remaining
+    // Add empty stars
     let totalStarsDisplayed = fullStars + (hasHalfStar ? 1 : 0);
     const emptyStars = 5 - totalStarsDisplayed;
     
@@ -37,8 +36,7 @@ function renderStars(ratingValue, container) {
         container.appendChild(emptyStarSpan);
     }
     
-    // Optional: add numeric rating display next to stars
-    // Check if we already have a numeric element, or create one
+    // Add numeric rating display
     let ratingNumberSpan = container.parentNode.querySelector('.rating-number');
     if (!ratingNumberSpan) {
         ratingNumberSpan = document.createElement('span');
@@ -46,7 +44,7 @@ function renderStars(ratingValue, container) {
         container.parentNode.appendChild(ratingNumberSpan);
     }
     
-    // Format rating display (remove .0 if whole number)
+    // Format rating display
     if (rating === Math.floor(rating)) {
         ratingNumberSpan.textContent = `${rating} / 5 ★`;
     } else {
@@ -54,9 +52,11 @@ function renderStars(ratingValue, container) {
     }
 }
 
-// Initialize all rating displays on page load
+// Initialize ALL rating displays on page load - FIXED to loop through all
 function initAllRatings() {
     const ratingContainers = document.querySelectorAll('.stars-display');
+    console.log('Found', ratingContainers.length, 'rating containers'); // Debug line
+    
     ratingContainers.forEach(container => {
         const ratingAttr = container.getAttribute('data-rating');
         if (ratingAttr !== null) {
