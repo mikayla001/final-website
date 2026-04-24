@@ -68,3 +68,61 @@ p {
     color: white;
     cursor: pointer;
 }
+
+/* ---- STAR RATING DISPLAY (gold filled stars) ---- */
+.rating-section {
+    padding: 0.8rem 1.5rem 1.5rem;
+    border-top: 1px solid #ece3d8;
+    background: #fefcf8;
+}
+
+.rating-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #b48c48;
+    margin-bottom: 0.6rem;
+}
+
+.stars-display {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    flex-wrap: wrap;
+}
+
+.star-graphic {
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Full gold star */
+.star-full {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23e6b422' stroke='%23c9920e' stroke-width='0.3'%3E%3Cpath d='M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z'/%3E%3C/svg%3E");
+}
+
+/* Half gold star (for .5 ratings) */
+.star-half {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23e6b422' stroke='%23c9920e' stroke-width='0.3'%3E%3Cdefs%3E%3CclipPath id='halfClip'%3E%3Crect x='0' y='0' width='12' height='24'/%3E%3C/clipPath%3E%3C/defs%3E%3Cpath d='M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z' fill='%23e6b422' clip-path='url(%23halfClip)'/%3E%3Cpath d='M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z' fill='none' stroke='%23d4b87a' stroke-width='0.6'/%3E%3C/svg%3E");
+}
+
+/* Empty star outline */
+.star-empty {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23f0e8d5' stroke='%23d4b87a' stroke-width='0.6'%3E%3Cpath d='M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z'/%3E%3C/svg%3E");
+}
+
+.rating-number {
+    font-family: 'Corben', cursive;
+    font-size: 0.9rem;
+    background: #ece3d1;
+    padding: 0.2rem 0.9rem;
+    border-radius: 40px;
+    margin-left: 0.6rem;
+    font-weight: bold;
+    color: #7a5c2e;
+}
